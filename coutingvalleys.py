@@ -20,20 +20,17 @@ def countingValleys(steps, path):
     valleys = 0
     for s in path:
         if s == 'U':
-            level += 1
-        elif s == 'D':
-            level -= 1
+            level +=1
             if level == 0:
                 valleys += 1
-
+        elif s == 'D':
+            level -=1            
 
     return valleys
     
 
-
-        
 if __name__ == '__main__':
-    ar = "DDUUDDUDUUUD"
+    ar = "UDDDUDUU"
     n = len(ar)
     result = countingValleys(n,ar)
     print(result)

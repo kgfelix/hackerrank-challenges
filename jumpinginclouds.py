@@ -12,7 +12,6 @@ def jumpingOnClouds(c):
     skipNext = False
     limit = len(c) - 1
 
-
     i = 0
     while i < limit:
         if skipNext:
